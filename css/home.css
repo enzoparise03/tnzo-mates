@@ -5,7 +5,7 @@
     min-height: 99vh; 
     position: relative;
     /* Fondo con gradiente oscuro para que el texto resalte sobre la foto */
-    background-image:linear-gradient(rgba(66, 33, 24, 0.349), rgba(66, 33, 24, 0.349)), url('/assets/hero.jpg');
+    background-image:linear-gradient(rgba(66, 33, 24, 0.349), rgba(66, 33, 24, 0.349)), url('../assets/hero.jpg');
     background-size: cover;
     background-position: center;
     font-family: var(--font-body);
