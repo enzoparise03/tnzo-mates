@@ -1,0 +1,194 @@
+
+/* =========================================
+   3. LAYOUT PRINCIPAL (PÁGINA PRODUCTOS)
+   ========================================= */
+.productos-page {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* =========================================
+   4. COMPONENTE: BARRA DE FILTROS (ASIDE)
+   ========================================= */
+.filtros {
+    width: 215px;
+    background: #ffffff;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    padding-bottom: 14px;
+}
+
+.filtros h3 {
+    color: var(--color-dark);
+    margin-bottom: 9px;
+    font-family: var(--font-heading);
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 7px;
+    font-size: 20px;
+}
+
+.filtros hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0 20px;
+}
+
+.filtro p {
+    font-weight: bold;
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+    color: var(--color-dark);
+    padding-left: 7px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.filtro ul {
+    list-style: none;
+    padding: 0 7px;
+    margin-bottom: 20px;
+}
+
+.filtro li a {
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    text-decoration: none;
+    color: var(--color-text);
+    transition:  0.1s;
+}
+
+.filtro li a:hover {
+    color: var(--color-accent);
+}
+
+/* =========================================
+   5. COMPONENTE: GRILLA Y TARJETAS DE PRODUCTO
+   ========================================= */
+.productos-grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    width: calc(25% - 15px); /* 4 Columnas por defecto */
+}
+
+.producto h4{
+    font-family: var(--font-body);
+    color: var(--color-dark);
+}
+
+.producto p{
+    font-family: var(--font-body);
+    color: var(--color-text);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit:contain;
+    border-radius: 10px;
+}
+
+.producto:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* =========================================
+   6. UTILIDADES: BOTONES
+   ========================================= */
+.btn{
+    margin-top: 8px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    background: #3b2a1a;
+    color: white;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* =========================================
+   7. FOOTER
+   ========================================= */
+.footer {
+    background: linear-gradient(to right, #2b1a0e, #5a3a1f);
+    color: white;
+    text-align: center;
+    padding:1.5rem 1rem;
+    margin-top: auto;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+/* =========================================
+   8. DISEÑO RESPONSIVO (MEDIA QUERIES)
+   ========================================= */
+
+/* --- TABLETS (Pantallas Medianas) --- */
+@media (max-width: 1024px) {
+    .productos-page {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    
+    .filtros {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .producto {
+        width: calc(33.333% - 14px); /* Pasa a 3 columnas */
+    }
+}
+
+/* --- CELULARES (Pantallas Pequeñas) --- */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .filtros {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .producto {
+        width: 100%; /* Pasa a 1 sola columna */
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+}

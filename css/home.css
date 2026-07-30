@@ -1,0 +1,320 @@
+/* =========================================
+   1. SECCIÓN HERO (INICIO)
+   ========================================= */
+.hero {
+    min-height: 99vh; 
+    position: relative;
+    /* Fondo con gradiente oscuro para que el texto resalte sobre la foto */
+    background-image:linear-gradient(rgba(66, 33, 24, 0.349), rgba(66, 33, 24, 0.349)), url('/assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.2rem;
+}
+
+.hero-text h1 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    color: rgb(230, 215, 176);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1), -1px -1px 0 rgba(0, 0, 0, 1), 1px 1px 0 rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: rgb(230, 215, 176);
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+    margin-bottom: 30px;
+}
+
+/* --- BOTONES DEL HERO --- */
+.btn {
+    display: inline-block;
+    background: #241910;
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #4a3422;
+    transform: scale(1.05);
+}
+
+/* =========================================
+   2. SECCIÓN DE TARJETAS (CATEGORÍAS)
+   ========================================= */
+.seccion-tarjetas {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.seccion-tarjetas h2 {
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.grid-categorias {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* --- ESTILOS INDIVIDUALES DE LA TARJETA --- */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(25% - 25px); /* Matemáticas Flexbox para 4 columnas */
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.img-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la foto se estire feo */
+}
+
+.card h3 {
+    font-family: var(--font-body);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    flex-grow: 1; /* Empuja el botón siempre hacia abajo */
+}
+
+.btn-card {
+    background: var(--color-accent);
+    color: var(--color-white);
+    text-decoration: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.btn-card:hover {
+    background: #c89b3c;
+    color: black;
+}
+
+/* =========================================
+   3. SECCIÓN DE GALERÍA (MOSAICO FLEXBOX)
+   ========================================= */
+.galeria {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e6dfd3; /* Fondo alternativo para separar de otras secciones */
+}
+
+.galeria h2 {
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+    justify-content: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.galeria-fotos img {
+    height: 220px;
+    object-fit:cover;
+    width: calc(25% - 25px); /* 4 fotos por fila en escritorio */
+    border-radius: 8px;
+    flex-grow: 1; /* Hacen el efecto mosaico ocupando el espacio que sobre */
+    transition: transform 0.3s;
+}
+
+.galeria-fotos img:hover{
+    transform: scale(1.04);
+}
+
+/* =========================================
+   4. SECCIÓN CONTACTO (FORMULARIO SEMÁNTICO)
+   ========================================= */
+.seccion-contacto {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.seccion-contacto h2 {
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-family: var(--font-body);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 15px;
+}
+
+/* --- BOTONES DE RADIO --- */
+.radio-group {
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 15px;
+}
+
+/* --- BOTONES DE ENVIAR / LIMPIAR --- */
+.form-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.form-botones button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit {
+    background: #3b2a1a;
+    color: white;
+}
+
+.btn-submit:hover {
+    background: #241910;
+}
+
+.btn-reset {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.btn-reset:hover {
+    background: #ccc;
+}
+
+/* =========================================
+   5. DISEÑO RESPONSIVE (CELULARES Y TABLETS)
+   ========================================= */
+
+/* --- TABLETS --- */
+@media (max-width: 1024px) {
+    .card, 
+    .galeria-fotos img {
+        width: calc(50% - 15px); /* Pasan a 2 columnas en pantallas medianas */
+    }
+}
+
+/* --- CELULARES --- */
+@media (max-width: 768px) {
+    
+    /* 1. Achicamos el Hero para que no ocupe tanto espacio vertical inútil */
+    .hero {
+        padding: 40px 20px;
+        min-height: 80vh;
+    }
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    /* 2. Tarjetas y Galería pasan a modo 1 sola columna ocupando todo el ancho */
+    .card, 
+    .galeria-fotos img {
+        width: 100%;
+    }
+
+    /* 3. El formulario apila sus botones de selección y de envío */
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .form-botones {
+        flex-direction: column;
+    }
+}
