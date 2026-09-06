@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Black+Ops+One&family=Instrument+Serif:ital@0;1&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/0822f36ab0.js" crossorigin="anonymous"></script>
-    <title>TNZO Mates & Crochet - Inicio</title>
+    <title>TNZO Mates & Crochet</title>
 </head>
 
 <body>
 
     <header>
         <nav class="navbar">
-            <div class="logo">TNZO MATES <br> & CROCHET</div>
+
+            <div class="logo-container">
+                <img src="assets/icono-mate.png" alt="Icono Mate" class="logo-icon">
+                <div class="logo-text">
+                    <span class="logo-title">TNZO</span>
+                    <span class="logo-subtitle">MATES Y CROCHET</span>
+                </div>
+            </div>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="iconosNav">
-                <input type="search" placeholder="Buscar" class="buscadorNav">
+                <input type="search" placeholder="Buscar productos" class="buscadorNav">
                 <span class="icon"><i class="fa-solid fa-user"></i></span>
                 <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
             </div>
@@ -37,19 +42,22 @@
     <main>
         <section class="hero">
             <div class="hero-text">
-                <h1>TNZO MATES & CROCHET</h1>
-                <p>Mates artesanales y crochet de calidad garantizada. La cultura en un mate.</p>
-                <a href="productos.html" class="btn">VER PRODUCTOS</a>
+                <span class="hero-label">— LA CULTURA EN UN MATE</span>
+                <h1>TNZO<br>MATES & CROCHET</h1>
+                <span class="hero-divider">❧ ─ ❧</span>
+                <p>Mates artesanales y crochet de calidad garantizada.</p>
+                <a href="productos.html" class="btn-hero">VER PRODUCTOS <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
 
         <section class="seccion-tarjetas">
-            <h2>Nuestras Categorías</h2>
+            <span class="span-categoria">— Elegí tu producto favorito —</span>
+            <h2 class="h2-categoria">Productos Destacados</h2>
 
             <div class="grid-categorias">
                 <article class="card">
                     <div class="img-container">
-                        <img src="assets/Imperial esquinero con base de alpaca.jpg" alt="Mates Imperiales">
+                        <img src="assets/Imperial labrado base de alpaca.jpg" alt="Mates Imperiales">
                     </div>
                     <h3>IMPERIALES</h3>
                     <p>Mates con virola de alpaca cincelada y cuero crudo premium para el mejor cebador.</p>
@@ -67,7 +75,7 @@
 
                 <article class="card">
                     <div class="img-container">
-                        <img src="assets/Camionero de calabaza con patas de acero.jpg" alt="Mates Camioneros">
+                        <img src="assets/Camionero de calabaza.jpg" alt="Mates Camioneros">
                     </div>
                     <h3>CAMIONEROS</h3>
                     <p>De boca ancha y base firme. La opción preferida para viajes largos y rutas.</p>
@@ -76,13 +84,50 @@
 
                 <article class="card">
                     <div class="img-container">
-                        <img src="assets/MaxiCanasta.jpg" alt="Accesorios Crochet">
+                        <img src="assets/bolsoFiesta.jpg" alt="Accesorios Crochet">
                     </div>
                     <h3>CROCHET</h3>
                     <p>Fundas y accesorios tejidos a mano con hilo de primera calidad y diseños únicos.</p>
                     <a href="filtro/crochet.html" class="btn-card">VER MÁS</a>
                 </article>
+
+                <article class="card">
+                    <div class="img-container">
+                        <img src="assets/Bombillon premium.jpg" alt="Bombillas">
+                    </div>
+                    <h3>BOMBILLAS</h3>
+                    <p>Bombillas y bombillones cincelados y lisos.</p>
+                    <a href="filtro/bombillas.html" class="btn-card">VER MÁS</a>
+                </article>
             </div>
+        </section>
+
+        <section class="beneficios">
+
+            <div class="beneficio-item">
+                <img src="assets/icono-envios.png" alt="Envíos a todo el país" class="beneficio-icono">
+                <div class="beneficio-texto">
+                    <h4>Envíos a todo el país</h4>
+                    <p>Llegamos a donde estés, con embalaje seguro.</p>
+                </div>
+            </div>
+
+            <div class="beneficio-item">
+                <img src="assets/icono-compra-segura.png" alt="Compra segura" class="beneficio-icono">
+                <div class="beneficio-texto">
+                    <h4>Compra segura</h4>
+                    <p>Protegemos tus datos para que compres con confianza.</p>
+                </div>
+            </div>
+
+            <div class="beneficio-item">
+                <img src="assets/icono-calidad.png" alt="Calidad garantizada" class="beneficio-icono">
+                <div class="beneficio-texto">
+                    <h4>Calidad garantizada</h4>
+                    <p>Trabajamos con materiales seleccionados.</p>
+                </div>
+            </div>
+
         </section>
 
         <section class="galeria">
