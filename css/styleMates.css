@@ -221,6 +221,61 @@ h1 {
     font-weight: 500;
 }
 
+
+/* =========================================
+                BENEFICIOS
+   ========================================= */
+
+.beneficios-prod {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: var(--max-width);
+    margin: auto;
+    margin-bottom: 10px;
+    background: var(color-bg);
+    border-top: 1px solid #e6d8c6 ;
+    padding: 10px 10px;
+}
+
+.beneficio-item-prod {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1 1 220px;
+    padding: 10px 25px;
+    border-right: 1px solid #e6d8c6;
+}
+
+.beneficio-item-prod:last-child {
+    border-right: none;
+}
+
+.beneficio-icono {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.beneficio-texto h4 {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: #4a3422;
+    margin-bottom: 4px;
+}
+
+.beneficio-texto p {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-text);
+    line-height: 1.4;
+}
+
+.beneficio-texto p strong {
+    color: #4a3422;
+}
+
 /* =========================================
    5. DISEÑO RESPONSIVE (MEDIA QUERIES)
    ========================================= */

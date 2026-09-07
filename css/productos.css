@@ -1,4 +1,3 @@
-
 /* =========================================
    3. LAYOUT PRINCIPAL (PÁGINA PRODUCTOS)
    ========================================= */
@@ -16,7 +15,7 @@
     background: #ffffff;
     border-radius: 10px;
     height: fit-content;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     padding-bottom: 14px;
 }
 
@@ -58,7 +57,7 @@
     font-family: var(--font-body);
     text-decoration: none;
     color: var(--color-text);
-    transition:  0.1s;
+    transition: 0.1s;
 }
 
 .filtro li a:hover {
@@ -80,27 +79,30 @@
     padding: 15px;
     border-radius: 15px;
     text-align: center;
-    width: calc(25% - 15px); /* 4 Columnas por defecto */
+    width: calc(25% - 15px);
+    /* 4 Columnas por defecto */
 }
 
-.producto h4{
+.producto h4 {
     font-family: var(--font-body);
     color: var(--color-dark);
+    margin-bottom: 2px;
 }
 
-.producto p{
+.producto p {
     font-family: var(--font-body);
     color: var(--color-text);
+    margin-bottom: 5px;
 }
 
 .producto img {
     width: 100%;
     height: 180px;
-    object-fit:contain;
+    object-fit: contain;
     border-radius: 10px;
 }
 
-.producto:hover{
+.producto:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
@@ -108,7 +110,7 @@
 /* =========================================
    6. UTILIDADES: BOTONES
    ========================================= */
-.btn{
+.btn {
     margin-top: 8px;
     padding: 5px;
     cursor: pointer;
@@ -128,7 +130,7 @@
     background: linear-gradient(to right, #2b1a0e, #5a3a1f);
     color: white;
     text-align: center;
-    padding:1.5rem 1rem;
+    padding: 1.5rem 1rem;
     margin-top: auto;
 }
 
@@ -152,7 +154,7 @@
         flex-direction: column;
         padding: 30px 20px;
     }
-    
+
     .filtros {
         width: 100%;
         display: flex;
@@ -163,7 +165,8 @@
     }
 
     .producto {
-        width: calc(33.333% - 14px); /* Pasa a 3 columnas */
+        width: calc(33.333% - 14px);
+        /* Pasa a 3 columnas */
     }
 }
 
@@ -181,9 +184,20 @@
         align-items: center;
         text-align: center;
     }
-    
+
     .producto {
-        width: 100%; /* Pasa a 1 sola columna */
+        width: calc(50% - 10px);
+        /* Pasa a 1 sola columna */
+    }
+
+    .producto img {
+        height: 130px;
+        /* en vez de 180px, para que no se vea desproporcionado en cards angostas */
+    }
+
+    .producto h4 {
+        font-size: 14px;
+        /* opcional, si el nombre del producto se corta en 2-3 líneas muy largas */
     }
 
     .footer-nav {
